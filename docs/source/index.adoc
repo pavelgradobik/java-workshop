@@ -64,3 +64,15 @@ Start an app
 ----
 docker-compose up -d
 ----
+
+go to http://${ip}:8086
+
+==== Rest APP
+
+----
+curl -O https://raw.githubusercontent.com/SergeyPirogov/user-rest/master/docker-compose.yml
+----
+
+and then
+
+go to http://${ip}:8080/swagger-ui.html
