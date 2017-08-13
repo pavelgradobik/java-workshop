@@ -82,4 +82,9 @@ go to http://${ip}:8080/swagger-ui.html
 
 https://hub.docker.com/_/jenkins/
 
+----
+sudo docker run -d -p 8080:8080 -p 50000:50000 -v $PWD/jenkins:/var/jenkins_home jenkins
+----
+
 run and then http://${ip}:8080/login?from=%2F
+
