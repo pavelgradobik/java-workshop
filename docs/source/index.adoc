@@ -76,3 +76,10 @@ curl -O https://raw.githubusercontent.com/SergeyPirogov/user-rest/master/docker-
 and then
 
 go to http://${ip}:8080/swagger-ui.html
+
+
+=== Jenkins
+
+https://hub.docker.com/_/jenkins/
+
+run and then http://${ip}:8080/login?from=%2F
