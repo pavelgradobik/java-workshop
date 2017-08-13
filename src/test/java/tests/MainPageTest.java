@@ -20,7 +20,7 @@ public class MainPageTest extends BaseTest {
     private MainPage mainPage = new MainPage();
 
     @Before
-    public static void login() {
+    public void login() {
         if (!WebDriverRunner.url().equals(Configuration.baseUrl + "/index")) {
             open(LoginPage.class)
                     .loginAs("admin", "admin");
