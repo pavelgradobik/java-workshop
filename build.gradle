@@ -33,4 +33,8 @@ dependencies {
 
 test{
     systemProperties System.properties
+    testLogging {
+        events "passed", "skipped", "failed"
+        exceptionFormat = 'full'
+    }
 }
