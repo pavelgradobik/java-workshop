@@ -14,6 +14,6 @@ public class BaseTest {
         ChromeDriverManager.getInstance().setup();
         Configuration.browser = "chrome";
         Configuration.timeout = 10000;
-        Configuration.baseUrl = "http://35.202.114.121:8086";
+        Configuration.baseUrl = "http://35.202.149.166:8086";
     }
 }
