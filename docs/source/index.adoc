@@ -1,0 +1,66 @@
+== Java Workshop
+
+=== Requirements:
+
+- Java 8
+- Gradle/Maven
+- Cloud Profile (Google Cloud Engine)
+- Github
+
+=== Setup 
+
+Create github project and clone: ex **java_workshop**
+
+----
+git clone https://github.com/SergeyPirogov/java-workshop.git
+
+cd java_workshop
+----
+
+Init gradle project
+
+----
+gradle init
+----
+
+Uncomment lines in **build.gradle**
+
+Import project to Intelij Idea
+
+=== Install docker
+
+https://docs.docker.com/engine/installation/#supported-platforms
+
+Ubuntu
+
+https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/#install-using-the-repository
+
+https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-16-04
+
+Install pip
+
+----
+sudo apt-get install -y python-pip 
+----
+
+Install docker-compose
+
+----
+curl -O https://gist.githubusercontent.com/deviantony/2b5078fe1675a5fedabf1de3d1f2652a/raw/4516ce1aae777616e980c4645897c4ae30362b2a/install-latest-compose.sh
+----
+
+or 
+
+https://docs.docker.com/compose/install/#install-compose-on-linux-systems
+
+=== Run System under test
+
+----
+curl -O https://raw.githubusercontent.com/SergeyPirogov/python-video-service/master/docker-compose.yml
+----
+
+Start an app
+
+----
+docker-compose up -d
+----
