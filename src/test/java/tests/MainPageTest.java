@@ -28,14 +28,14 @@ public class MainPageTest extends BaseTest {
     }
 
     @Test
-    void testCanUploadVideoFile() {
+    public void testCanUploadVideoFile() {
         mainPage.uploadVideo("test_video.mp4")
                 .video.videoName()
                 .shouldHave(text("test_video.mp4"));
     }
 
     @Test
-    void testDeleteVideoFile() {
+    public void testDeleteVideoFile() {
         Video video = mainPage.uploadVideo("test_video.mp4").video;
         video.delete();
         video.videoName().should(disappear);
