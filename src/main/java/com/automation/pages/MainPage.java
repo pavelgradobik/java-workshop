@@ -1,6 +1,7 @@
 package com.automation.pages;
 
 import com.codeborne.selenide.SelenideElement;
+import io.qameta.allure.Step;
 
 import static com.codeborne.selenide.Selenide.$;
 
@@ -14,7 +15,7 @@ public class MainPage  {
      private SelenideElement uploadBtn = $("#upload_submit > button");
      public Video video = new Video(".panel-heading");
 
-
+     @Step
      public MainPage uploadVideo(String... filename){
           uploadInput.uploadFromClasspath(filename);
           uploadBtn.click();

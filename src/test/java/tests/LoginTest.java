@@ -3,7 +3,7 @@ package tests;
 
 import com.automation.pages.LoginPage;
 import com.automation.pages.utils.SelenideUtils;
-import org.junit.Test;
+import org.testng.annotations.Test;
 
 import static com.codeborne.selenide.Condition.text;
 

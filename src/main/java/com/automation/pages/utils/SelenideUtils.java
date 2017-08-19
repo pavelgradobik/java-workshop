@@ -1,7 +1,7 @@
 package com.automation.pages.utils;
 
 import com.automation.pages.Page;
-import ru.yandex.qatools.allure.annotations.Step;
+import io.qameta.allure.Step;
 
 /**
  * Created by sergey on 19.03.17.

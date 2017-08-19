@@ -5,8 +5,8 @@ import com.automation.pages.MainPage;
 import com.automation.pages.Video;
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.WebDriverRunner;
-import org.junit.Before;
-import org.junit.Test;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
 
 import static com.automation.pages.utils.SelenideUtils.open;
 import static com.codeborne.selenide.Condition.disappear;
@@ -19,7 +19,7 @@ public class MainPageTest extends BaseTest {
 
     private MainPage mainPage = new MainPage();
 
-    @Before
+    @BeforeClass
     public void login() {
         if (!WebDriverRunner.url().equals(Configuration.baseUrl + "/index")) {
             open(LoginPage.class)
