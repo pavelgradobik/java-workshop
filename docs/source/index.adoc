@@ -4,8 +4,12 @@
 
 - Java 8
 - Gradle/Maven
-- Cloud Profile (Google Cloud Engine)
+- Cloud Profile (Google Cloud Engine) 
 - Github
+
+===
+- Create GCE beforehands
+- Open gce ports
 
 === Setup 
 
