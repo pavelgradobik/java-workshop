@@ -6,52 +6,29 @@
 - Gradle/Maven
 - Cloud Profile (Google Cloud Engine) 
 - Github
-
-===
-- Create GCE beforehands
 - Open gce ports
-
-=== Setup 
-
-Create github project and clone: ex **java_workshop**
-
-----
-git clone https://github.com/SergeyPirogov/java-workshop.git
-
-cd java_workshop
-----
-
-Init gradle project
-
-----
-gradle init
-----
-
-Uncomment lines in **build.gradle**
-
-Import project to Intelij Idea
 
 === Install docker
 
-https://docs.docker.com/engine/installation/#supported-platforms
-
-Ubuntu
-
-https://docs.docker.com/engine/installation/linux/docker-ce/ubuntu/#install-using-the-repository
+Complete step 1 from the article below
 
 https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-16-04
 
-Install pip
 
-----
-sudo apt-get install -y python-pip 
-----
-
-Install docker-compose
+=== Install docker-compose
 
 ----
 curl -O https://gist.githubusercontent.com/deviantony/2b5078fe1675a5fedabf1de3d1f2652a/raw/4516ce1aae777616e980c4645897c4ae30362b2a/install-latest-compose.sh
 ----
+
+----
+sudo chmod +x install-latest-compose.sh
+----
+
+---
+sudo su
+./install-latest-compose.sh
+---
 
 or 
 
@@ -66,7 +43,7 @@ curl -O https://raw.githubusercontent.com/SergeyPirogov/python-video-service/mas
 Start an app
 
 ----
-docker-compose up -d
+sudo docker-compose up -d
 ----
 
 go to http://${ip}:8086
@@ -92,3 +69,23 @@ sudo docker run -d -p 8080:8080 -p 50000:50000 -v $PWD/jenkins:/var/jenkins_home
 
 run and then http://${ip}:8080/login?from=%2F
 
+
+=== Setup
+
+Create github project and clone: ex **java_workshop**
+
+----
+git clone https://github.com/SergeyPirogov/java-workshop.git
+
+cd java_workshop
+----
+
+Init gradle project
+
+----
+gradle init
+----
+
+Uncomment lines in **build.gradle**
+
+Import project to Intelij Idea
