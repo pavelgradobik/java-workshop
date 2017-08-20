@@ -36,7 +36,6 @@ test {
     }
 
     test.outputs.upToDateWhen { false }
-    maxParallelForks = 2
 }
 
 task chrome(type: Test) {
